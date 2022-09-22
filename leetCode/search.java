@@ -17,7 +17,8 @@ class algo {
     // Main
     public static void main(String[] args) {
 
-        int[] array = { 5 };
+        // int[] array = { 5 };
+        int[] array = { 55 , 9 , 10 , 1 , 5 , 3 , 8 , 7 };
         System.out.println(search(array, 5));
 
     }

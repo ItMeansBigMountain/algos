@@ -1,9 +1,7 @@
 package finishedAlgos;
 import java.util.*;
 
-class algo {
-
-    //THIS WORKS IN COMPILER WITH NO ISSUES BUT DOESNT WORK ON LEETCODE DUE TO LINE 26
+class longestCommonPrefix {
 
     public static String longestCommonPrefix(String[] strs) {
         if(strs.length <= 1){
@@ -44,11 +42,11 @@ class algo {
 
     public static void main(String[] args) {
 
-        // String[] array = {"flower","flow","flight"};
+        String[] array = {"flower","flow","flight"};
         // String[] array = {"dog","racecar","car"};
         // String[] array = {"subpar","subsequent","submerge"};
         // String[] array = {"a"};
-        String[] array = {"",""};
+        // String[] array = {"",""};
         System.out.println(   longestCommonPrefix(  array  )  ); 
 
     }
