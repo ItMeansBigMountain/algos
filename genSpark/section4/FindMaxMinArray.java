@@ -14,7 +14,6 @@ public class FindMaxMinArray {
         // find min and max
         int minimum = nums[0];
         int maximum = nums[0];
-        int total = nums[0];
         for (int x = 1; x < nums.length; x++) {
             if (minimum > nums[x]) { // min
                 minimum = nums[x];
