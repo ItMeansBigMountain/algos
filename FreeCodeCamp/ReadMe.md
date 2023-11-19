@@ -1,50 +1,75 @@
-# What is an Algorithm?
-An algorithm is a defined set of sequential instructions executed to perform a specific task. Key characteristics include:
-- **Ordered Steps**: The sequence of operations is crucial.
-- **Clarity**: Each step must be clear and unambiguous.
-- **Finite Outcome**: It should produce a result within a finite time frame.
-- **Non-Infinite**: It must terminate and not run indefinitely.
+# Understanding Algorithms
 
-**Note**: Utilize established methods for common problems to avoid unnecessary effort in problem-solving.
+## Definition and Characteristics
+An algorithm is a set of sequential instructions executed to perform a specific task. Its key characteristics include:
+- **Ordered Steps**: Crucial sequence of operations.
+- **Clarity**: Unambiguous steps.
+- **Finite Outcome**: Result in a finite time frame.
+- **Termination**: Must not run indefinitely.
 
-# Comparing Algorithms
-- Assess the number of operations or iterations in both the best and worst-case scenarios.
-- Consider not just time complexity, but also space complexity.
+**Note**: Leverage established methods for common problems to optimize problem-solving.
 
-## Order of Growth
-Refers to the rate at which the runtime of an algorithm increases as the size of the input increases, commonly expressed using Big O notation.
+## Comparing Algorithms
 
-### Big O Notation
-Represents the upper bound of the complexity in the worst-case scenario, providing a high-level understanding of the algorithm in terms of time or space complexity.
+### Importance of Assessment
+- Evaluate both the best and worst-case scenarios.
+- Consider time and space complexities.
+---
+## Order of Growth and Big O Notation
 
-### Common Complexities
-- **O(1)**: Constant Time - The execution time remains constant, irrespective of input size.
-- **O(log n)**: Logarithmic Time - As the input size grows, the runtime increases logarithmically, leading to a flattened curve.
-- **O(n)**: Linear Time - Execution time grows linearly with input size.
-- **O(n log n)**: Linearithmic Time - Combines linear and logarithmic growth.
-- **O(n^2)**: Quadratic Time - Time complexity increases quadratically with input size.
-- **O(n^3)**: Cubic Time - Complexity grows cubically with input size.
-- **O(2^n)**: Exponential Time - Complexity doubles with each additional input element.
-- **O(n!)**: Factorial Time - Complexity grows factorially based on input size.
+### Overview
+- Rates the increase in runtime or space as input size grows.
+- Expressed using Big O notation.
 
-### Additional Considerations
-- **Best, Average, and Worst Case**: Evaluate algorithms in different scenarios.
-- **Space Complexity**: How much memory an algorithm uses.
+### Common Time Complexities
+- **O(1)**: Constant Time
+- **O(log n)**: Logarithmic Time
+- **O(n)**: Linear Time
+- **O(n log n)**: Linearithmic Time
+- **O(n^2)**: Quadratic Time
+- **O(n^3)**: Cubic Time
+- **O(2^n)**: Exponential Time
+- **O(n!)**: Factorial Time
 
-# Search Algorithms
-1. **Linear Search**:
-   - Iteratively checks each element.
-   - Suitable for unsorted data.
+---
+## Space Complexity
 
-2. **Binary Search**:
-   - Requires sorted data.
-   - Repeatedly divides the search interval in half.
-   - Discards the half that surely does not contain the item.
+### Understanding Space Complexity
+- Measures the memory required as the algorithm scales.
 
-3. **Depth-First Search (DFS)**:
-   - Explores as far as possible along each branch before backtracking.
-   - Common in tree or graph data structures.
+### Types of Space Complexity
+- **Constant Space (O(1))**
+- **Linear Space (O(n))**
+- **Non-Linear Space (e.g., O(n^2))**
 
-4. **Breadth-First Search (BFS)**:
-   - Explores all neighbors at the current depth before moving to nodes at the next depth level.
-   - Useful in finding the shortest path on unweighted graphs.
+### Importance in Design
+- Critical for systems with memory constraints.
+- Balancing space with time complexity.
+- Relevance in embedded systems, mobile apps, and large data.
+
+---
+## Search Algorithms
+
+
+### Types of Searches
+
+1. **Linear Search**
+   - Iterates through each element.
+   - For unsorted data.
+   - Time Complexity: O(n)
+   - Space Complexity: O(1)
+
+2. **Binary Search**
+   - Splits sorted data in half each iteration.
+   - Time Complexity: O(log n)
+   - Space Complexity: O(1) in iterative implementation, O(log n) in recursive implementation.
+
+3. **Depth-First Search (DFS)**
+   - Explores branches deeply before backtracking.
+   - Time Complexity: O(V + E) for graphs, O(n) for trees (V = number of vertices, E = number of edges, n = number of nodes).
+   - Space Complexity: O(V) for graphs, O(h) for trees (h = height of the tree).
+
+4. **Breadth-First Search (BFS)**
+   - Explores neighbors at each depth level.
+   - Time Complexity: O(V + E) for graphs, O(n) for trees.
+   - Space Complexity: O(V) for graphs, O(w) for trees (w = maximum width of the tree).
