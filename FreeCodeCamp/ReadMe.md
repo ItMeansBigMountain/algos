@@ -73,3 +73,25 @@ An algorithm is a set of sequential instructions executed to perform a specific 
    - Explores neighbors at each depth level.
    - Time Complexity: O(V + E) for graphs, O(n) for trees.
    - Space Complexity: O(V) for graphs, O(w) for trees (w = maximum width of the tree).
+
+
+---
+
+
+# DATA STRUCTURES
+
+## Array
+- **Fixed size and contiguous memory allocation.**
+- **Fast read access (O(1)).**
+- **Expensive resizing and element insertion/deletion (O(n)).**
+
+## Linked List
+- **Elements linked using pointers, allowing dynamic resizing.**
+- **Efficient insertion/deletion (O(1) if node is known).**
+- **Slower element access (O(n)).**
+
+## Map (Dictionary)
+- **Key-value pairs, optimized for fast retrieval.**
+- **Hash tables (average O(1) access) or binary search trees (O(log n) access).**
+- **Unique keys prevent duplicates.**
+- **Hash tables require efficient hashing; trees need balancing.**
