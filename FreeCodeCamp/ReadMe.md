@@ -49,8 +49,6 @@ An algorithm is a set of sequential instructions executed to perform a specific 
 
 ---
 ## Search Algorithms
-
-
 ### Types of Searches
 
 1. **Linear Search**
@@ -77,6 +75,17 @@ An algorithm is a set of sequential instructions executed to perform a specific 
 
 ---
 
+## Sort Algorithms
+### Types of Sort Algos
+
+1. **....**
+   - ....
+
+
+
+
+---
+
 
 # DATA STRUCTURES
 
@@ -95,3 +104,19 @@ An algorithm is a set of sequential instructions executed to perform a specific 
 - **Hash tables (average O(1) access) or binary search trees (O(log n) access).**
 - **Unique keys prevent duplicates.**
 - **Hash tables require efficient hashing; trees need balancing.**
+
+
+
+
+--- 
+# C.R.U.D.
+
+### INSERT
+- Insert: Index value injection (moves all subsequent items to the right)
+- Append: Add to the end of the list
+- Extend: Appending a new list to a previous one
+- Delete: Shifts every element to the left with a removed index item 
+
+
+
+
