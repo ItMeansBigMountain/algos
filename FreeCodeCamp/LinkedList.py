@@ -6,7 +6,7 @@ class Node:
         self.data = data
 
     def __repr__(self):
-        return f"<Node Value: {self.data}>"
+        return f"<{self.data}>"
 
 
 
@@ -34,13 +34,27 @@ class LinkedList:
 
 
 
+    def search(self, key):
+        current_node = self.head
+        found = False
+        index = 0
+        while current_node != None:
+            if current_node.data == key:
+                found = True
+                return index
+            index += 1
+            current_node = current_node.next_node
+        return None
+
+
+
 
     def __repr__(self):
         output = ""
         current_node = self.head
         while current_node != None:
-            if current_node:
-                output += f"{current_node} --> "
+            if current_node.next_node:
+                output += f"{current_node} -> "
             else:
                 output += f"{current_node}"
             current_node = current_node.next_node
@@ -57,3 +71,6 @@ l.add(40)
 
 print(l.size())
 print(l)
+
+
+print(l.search(10))
