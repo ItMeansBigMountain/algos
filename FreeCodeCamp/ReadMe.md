@@ -1,5 +1,8 @@
 # Understanding Algorithms
 
+- fun fact: `use the "-i" command when running python scripts to activate the interactive shell with all the code loaded from the script already.`
+- ex: `python -i code.py`
+
 ## Definition and Characteristics
 An algorithm is a set of sequential instructions executed to perform a specific task. Its key characteristics include:
 - **Ordered Steps**: Crucial sequence of operations.
@@ -109,9 +112,7 @@ An algorithm is a set of sequential instructions executed to perform a specific 
 
 
 --- 
-# C.R.U.D.
-
-### INSERT
+# Array Operations
 - Insert: Index value injection (moves all subsequent items to the right)
 - Append: Add to the end of the list
 - Extend: Appending a new list to a previous one
