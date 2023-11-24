@@ -35,6 +35,16 @@ class LinkedList:
 
 
 
+    def __repr__(self):
+        output = ""
+        current_node = self.head
+        while current_node != None:
+            if current_node:
+                output += f"{current_node} --> "
+            else:
+                output += f"{current_node}"
+            current_node = current_node.next_node
+        return output
 
 
 # Calling functions down here
@@ -46,3 +56,4 @@ l.add(30)
 l.add(40)
 
 print(l.size())
+print(l)
