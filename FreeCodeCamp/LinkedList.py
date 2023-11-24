@@ -22,7 +22,7 @@ class LinkedList:
     def size(self):
         count = 0
         current_node = self.head
-        while current_node.next_node != None:
+        while current_node != None:
             count += 1
             current_node = current_node.next_node
         return count
@@ -32,8 +32,12 @@ class LinkedList:
 
 
 
+
 # Calling functions down here
+l = LinkedList()
 n1 = Node(10)
-n2 = Node(20)
-n1.next_node = n2
-print(n1)
+
+l.head = n1
+size = l.size()
+
+print(size)
