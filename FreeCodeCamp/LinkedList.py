@@ -27,6 +27,10 @@ class LinkedList:
             current_node = current_node.next_node
         return count
 
+    def add(self, data):
+        new_node = Node(data)
+        new_node.next_node = self.head
+        self.head = new_node
 
 
 
@@ -35,9 +39,10 @@ class LinkedList:
 
 # Calling functions down here
 l = LinkedList()
-n1 = Node(10)
 
-l.head = n1
-size = l.size()
+l.add(10)
+l.add(20)
+l.add(30)
+l.add(40)
 
-print(size)
+print(l.size())
