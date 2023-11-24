@@ -32,8 +32,6 @@ class LinkedList:
         new_node.next_node = self.head
         self.head = new_node
 
-
-
     def search(self, key):
         current_node = self.head
         found = False
@@ -46,9 +44,6 @@ class LinkedList:
             current_node = current_node.next_node
         return None
 
-
-
-
     def __repr__(self):
         output = ""
         current_node = self.head
@@ -59,6 +54,13 @@ class LinkedList:
                 output += f"{current_node}"
             current_node = current_node.next_node
         return output
+
+
+
+
+
+
+
 
 
 # Calling functions down here
