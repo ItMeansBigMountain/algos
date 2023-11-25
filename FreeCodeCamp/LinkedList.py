@@ -32,6 +32,22 @@ class LinkedList:
         new_node.next_node = self.head
         self.head = new_node
 
+    def insert(self, data , index):
+        current_node = self.head
+        position = 0
+
+        if index > self.size(): return None
+        while current_node != None:
+            if position == index-1:
+                new_node = Node(data)
+                new_node.next_node = current_node.next_node
+                current_node.next_node = new_node
+                break
+            position += 1
+            current_node = current_node.next_node
+
+
+
     def search(self, key):
         current_node = self.head
         found = False
@@ -61,18 +77,33 @@ class LinkedList:
 
 
 
+if __name__ == "__main__":
+    # Showcasing methods down here
+    l = LinkedList()
 
 
-# Calling functions down here
-l = LinkedList()
 
-l.add(10)
-l.add(20)
-l.add(30)
-l.add(40)
-
-print(l.size())
-print(l)
+    print("\nADDING TO LINKED LIST...")
+    l.add(10)
+    l.add(20)
+    l.add(30)
+    l.add(40)
+    print(l)
+    print("size:", l.size())
 
 
-print(l.search(10))
+    
+    print("\nSEARCHING LINKED LIST...")
+    found_index =  l.search(10)
+    print("Found node at index:" ,found_index)
+
+
+
+    print("\nINSERTED INTO LINKED LIST...")
+    l.insert(3,3)
+    l.insert(3,3)
+    l.insert(3,3)
+    l.insert(3,3)
+    l.insert(3,3)
+    print(l)
+    print("size:", l.size())
